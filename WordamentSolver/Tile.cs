@@ -27,6 +27,7 @@ namespace WordamentSolver
                 if (adjTile.FindWord(word.Substring(1), usedTiles))
                     return true;
             }
+            usedTiles.Remove(this);
             return false;
         }
 
